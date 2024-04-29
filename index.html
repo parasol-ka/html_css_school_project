@@ -13,104 +13,110 @@
 </head>
 <body>
     <header>
-        <a href="index.html" id="logo" >
+<!--         <a href="index.html" id="logo" >
             <img src="images/home/logo_header.svg" alt="Logo Flux">
-        </a>
+        </a> -->
         <nav id="navtop">
             <ul class="nav-links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">LEARN CHORDS</a></li>
-                <li><a href="#">SONGS LIBRARY</a></li>
-                <li><a href="#">INFO</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="pages/chords.html">LEARN<br>CHORDS</a></li>
+                <li><a href="pages/songs.html">SONGS<br>LIBRARY</a></li>
+                <li><a href="pages/info.html">INFO</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="welcome">
-            <h1><span id="pink">STAY ON</span> <span id="black">THE SAME</span> <span id="white">FREQUANCY</span></h1>
-            <span class="bg_volume"><img src="images/home/volume1.webp" alt="" aria-hidden="true"></span>
+            <h1><span id="pink">STAY ON</span> <span id="black">THE SAME</span> <span id="white">FREQUENCY</span></h1>
             <a href="#menu" class="button">
                 <img src="images/home/button_off.webp" alt="" aria-hidden="true" class="decorative_icon">
                 explore now
             </a>
-            <img src="images/home/guitar.webp" alt="Photo of guitar" aria-hidden="true" id="bg_welcome">
+            <span class="bg_volume"><img src="images/home/volume1.webp" alt="" aria-hidden="true"></span>
+            <img src="images/home/guitar.webp" alt="Photo of guitar" aria-hidden="true" id="bg_welcome">  
         </section>
 
         <section id="menu">
-            <h2>ALL IN ONE PLACE</h2>
+            <h2 class="titles">ALL IN ONE PLACE</h2>
             <nav id="menu_home">
-                <ul class="menu_links">
+                <ul id="menu_links">
                     <li>
                         <a href="#learn" class="image_link">
-                          <img src="images/home/learn.svg" alt="Playing chords image" width="350">
-                          <figcaption>learn</figcaption>
+                          <img src="images/home/learn.svg" alt="Playing chords image" id="guitar_playing">
+                          <p>learn</p>
                         </a>
-                      </li>
+                    </li>
                     <li>
                         <a href="#stock" class="image_link">
-                        <img src="images/home/stock.svg" alt="Pages image" width="200">
-                        <figcaption>stock</figcaption>
+                        <img src="images/home/stock.svg" alt="Pages image" id="pages">
+                        <p>stock</p>
                       </a></li>
                     <li>
                         <a href="#inspire" class="image_link">
-                        <img src="images/home/inspire.svg" alt="Man walking image" width="350">
-                        <figcaption>inspire</figcaption>
+                        <img src="images/home/inspire.svg" alt="Man walking image" id="man_walking">
+                        <p>inspire</p>
                         </a>
                     </li>
                 </ul>
             </nav>
-            <span class="bg_volume"><img src="images/home/volume2.webp" alt="" aria-hidden="true"></span>  
+            <span class="bg_volume"><img src="images/home/volume2.webp" alt="" aria-hidden="true" id="volume2"></span>  
         </section>
 
         <section id="learn">
-            <h2>TRAIN YOUR SKILLS</h2>
+            <h2 class="titles">TRAIN YOUR SKILLS</h2>
             <div id="chord_choise">
+                <span  id="guitar_zoom"><img src="images/home/guitar_zoom.svg" alt="Guitar chord"></span>
                 <ul>
-                    <li><img src="images/home/D_chord.svg" alt="D Chord" id="d_chord" width="200"></li>
-                    <li>
-                        <span class="circle" id="1st_finger"></span>
-                        <span class="circle" id="2d_finger"></span>
-                        <span class="circle" id="3d_finger"></span>
+                    <li class="choise" id="d_chord">
+                        <img src="images/home/d_chord.webp" alt="D Chord">
+                        <img src="images/home/d_green.webp" alt="" class="chord_hidden" id="d_chord_green">
                     </li>
-                    <li><img src="images/home/G_chord.svg" alt="G Chord" id="g_chord" width="200"></li>
+                    <li class="choise" id="chord">
+                        <span class="circle" id="first_finger"></span>
+                        <span class="circle" id="second_finger"></span>
+                        <span class="circle" id="third_finger"></span>
+                    </li>
+                    <li class="choise" id="g_chord">
+                        <img src="images/home/g_chord.webp" alt="G Chord">
+                        <img src="images/home/g_red.webp" alt="" class="chord_hidden" id="g_chord_red">
+                    </li>
                 </ul>
+                <p>choose the right chord</p>
                 <a href="pages/learn.html" class="button">
                     <img src="images/home/note.webp" alt="" aria-hidden="true" class="decorative_icon">
                     see more
                 </a>
             </div>
-            <span class="bg_volume"><img src="images/home/volume3.webp" alt="" aria-hidden="true"></span>  
+            <span class="bg_volume"><img src="images/home/volume3.webp" alt="" aria-hidden="true" id="volume3"></span>  
         </section>
 
         <section id="stock">
-            <h2>EASY LYRICS LEARNING</h2>
+            <h2 class="titles">EASY LYRICS LEARNING</h2>
             <div id="song">
                 <ul>
-                    <li>
+                    <li id="song_player">
                         <h3>Hotel California</h3>
-                        <h4>Eagles</h4>
-                        <span class="player_options"></span>
-                        <span class="player_options"></span>
-                        <span class="player_options"></span>
-                        <img src="images/home/Hotelcalifornia.webp" alt="Hotel California Album" width="350" id="album">
-                        <img src="images/home/player.svg" alt="Song player" id="player" width="530">
+                        <h4>The Eagles</h4>
+                        <img src="images/home/player.svg" alt="Song player" id="player">
+                        <img src="images/home/hotelcalifornia.webp" alt="Hotel California Album" id="album">
+                        
                     </li>
-                    <li>
+                    <li id="song_text">
                         <p> 
-                            <strong>Intro</strong>
-                            Am   E7   G   D   F   C   Dm   E7   x2
+                            <strong>Intro</strong><br>
+                            Am   E7   G   D   F   C   Dm   E7   x2 <br>
                              
-                            <strong>Verse</strong>
-                            Am                         E7
-                              On a dark desert highway, cool wind in my hair
-                            G                      D
-                              Warm smell of colitas rising up through the air
-                            F                          C
-                              Up ahead in the distance, I saw a shimmering light
-                            Dm
-                               My head grew heavy and my sight grew dim
-                            E7
-                              I had to stop for the night
+                            <strong>Verse</strong><br>
+                            <span>Am </span>                  E7<br>
+                              On a dark desert highway, cool wind in my hair<br>
+                            <span>G</span>                    D<br>
+                              Warm smell of colitas rising up through the air<br>
+                            <span>F</span>                      C<br>
+                              Up ahead in the distance, I saw a shimmering light<br>
+                            Dm<br>
+                               My head grew heavy and my sight grew dim<br>
+                            E7<br>
+                              I had to stop for the night<br>
                         </p>
                     </li>
                 </ul>
@@ -122,14 +128,14 @@
         </section>
 
         <section id="inspire">
-            <span class="bg_volume"><img src="images/home/volume4.webp" alt="" aria-hidden="true"></span>
-            <h2>FLUX OF INSPIRATION</h2>
+            <span class="bg_volume"><img src="images/home/volume4.webp" alt="" aria-hidden="true" id="volume4"></span>
+            <h2 class="titles">FLUX OF INSPIRATION</h2>
             <img src="images/home/girl.webp" alt="Girl with a cat listening music" id="inspiration">
-            <figcaption>Discover new melodies and timeless classics updated daily in our library</figcaption>
+            <p>Discover new melodies and timeless classics updated daily in our library</p>
         </section>
     </main>
     <footer>
-        <img src="images/home/logo.webp" alt="Logo Flux" id="logo_footer">
+        <a href="#navtop"  id="logo_footer"><img src="images/home/logo.webp" alt="Logo Flux"></a>
         <p>Follow us on social media</p>
         <nav id="navbottom">
             <a href="https://www.instagram.com/anastasiias_faces/" target="_blank"><img src="images/home/insta.webp" alt="Instagram icon"></a>

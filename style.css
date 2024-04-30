@@ -262,6 +262,7 @@ section nav ul li a img{
 }
 #song {
   font-family: Century Gothic, sans-serif;
+  font-size: 1.3vw;
   width: 75%;
   height: 60%;
   margin-bottom: 2%;
@@ -343,6 +344,7 @@ section nav ul li a img{
 }
 #inspire p {
   font-family: Century Gothic, sans-serif;
+  font-size: 1.3vw;
 }
 #volume4 {
   margin-top: -4%;
@@ -424,6 +426,9 @@ footer p {
 }
 
 /* ---------- HOME ANIMATIONS ---------------*/
+#navtop ul li{
+  transition: all 0.5s ease-in-out;
+}
 
 #navtop ul li:hover {
   transition: 0.5s ease-in-out;;
@@ -432,17 +437,26 @@ footer p {
   transform: translateY(-0.1vw);
   
 }
+.button {
+  transition: all 0.5s ease-in-out;
+}
 .button:hover {
   position: relative;
   transition: 0.5s ease-in-out;
   box-shadow: 0 0 1vw white;
   transform: translateY(-0.1vw);
 }
+#menu_links li {
+  transition: all 0.5s ease-in-out;
+}
 #menu_links li:hover {
   position: relative;
   transition: 0.5s ease-in-out;
   box-shadow: 0 0 1.5vw white;
   transform: translateY(-0.2vw);
+}
+#d_chord_green, #g_chord_red, #chord {
+  transition: all 0.5s ease-in-out;
 }
 #d_chord:hover {
   #d_chord_green {
@@ -461,6 +475,9 @@ footer p {
 #chord:hover {
   transition: 0.5s ease-in-out;
   transform: scale(1.1);
+}
+#navbottom a img {
+  transition: all 0.5s ease-in-out;
 }
 #navbottom a img:hover {
   transition: 0.5s ease-in-out;

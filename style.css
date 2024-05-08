@@ -4,7 +4,6 @@
   font-family: 'Zone Em';
   src: url('ZoneEm.ttf') format('truetype');
   }
-
 html {
   scroll-behavior: smooth;
   background-color: black;
@@ -20,6 +19,7 @@ body {
   text-align: center;
   position: relative;
   }
+  
   /*-------------------------HEADER-------------------------*/
 #logo_link {
   position: absolute;
@@ -38,10 +38,7 @@ header  {
   width: 100%;
   height: 8.7vw;
 }
-#navtop {
-  margin-right: 2%;
-  margin-left: 45%;
-}
+#navtop { margin-right: 2%; margin-left: 45%; }
 #navtop ul {
   padding: 0.5vh;
   padding-left: 15%;
@@ -74,7 +71,6 @@ header  {
 }
 
 /* ------------------------- WELCOME SECTION -------------------------*/
-
 #welcome h1{
   text-align: center;
   margin-left: 5%;
@@ -87,9 +83,7 @@ header  {
   grid-template-rows: auto auto;
   color: #ED97CF;
 }
-#black {
-  color: black ;
-}
+#black { color: black ; }
 #white {
   z-index: 3;
   color: white;
@@ -101,9 +95,7 @@ header  {
   margin-left: -17%;
   width: 20%;
 }
-#welcome span img{
-  margin-top: 14vw;
-}
+#welcome span img{ margin-top: 14vw; }
 #welcome a{
   margin-left: -42%;
   margin-top: 5%;
@@ -112,8 +104,6 @@ header  {
 }
 
   /* ------------------------- MENU SECTION -------------------------*/
-
-
 #menu_links {
   padding: 0;
   display: flex;
@@ -138,31 +128,18 @@ section nav ul li a img{
   color: white;
   font-size: 2.5vw;
 } 
-.image_link p{
-  margin-top: 0;
-  margin-bottom: -20%;
-}
+.image_link p{ margin-top: 0; margin-bottom: -20%; }
 #guitar_playing {
   margin-left: -6%;
   width: 105%;
   margin-top: -9%;
 }
-#pages {
-  margin-top: 5%;
-  width: 61%;
-}
-#man_walking {
-  margin-top: -10%;
-  margin-left: -14%;
-}
+#pages { margin-top: 5%; width: 61%; }
+#man_walking { margin-top: -10%; margin-left: -14%; }
   /* ------------------------- LEARN SECTION -------------------------*/
 
-#learn {
-  height: 40vw;
-}
-#learn h2 {
-  margin-bottom: 1%;
-}
+#learn { height: 40vw; }
+#learn h2 { margin-bottom: 1%; }
 #chord_choise{
   z-index: 0;
   width: 70%;
@@ -217,7 +194,6 @@ section nav ul li a img{
   height: 2vw;
   border-radius: 50%;
   background-color: white;
-
 }
 #chord {
   width: 10%;
@@ -227,46 +203,26 @@ section nav ul li a img{
   margin-top: 1%;
   margin-right: 11%;
 }
-#first_finger {
-  grid-area: 2/1/3/1;
-}
-#second_finger {
-  grid-area: 1/2/2/2;
-}
+#first_finger { grid-area: 2/1/3/1; }
+#second_finger { grid-area: 1/2/2/2; }
 #third_finger {
   margin-top: -15%;
   grid-area: 3/2/4/2;
 }
-.choise {
-  z-index: 8;
-}
-.choise img{
-  width: 170%;
-}
+.choise { z-index: 8; }
+.choise img{ width: 170%; }
 #chord_choise p{
   font-size: 2.5vw;
   margin-top: 0;
   margin-bottom: 2%;
 }
-#volume2 {
-  width: 25%;
-  margin-top: -4%;
-}
-#volume3 {
-  margin-top: 5%;
-}
-#chord_choise p {
-  margin: 0;
-}
+#volume2 { width: 25%; margin-top: -4%; }
+#volume3 { margin-top: 5%; }
+#chord_choise p { margin: 0; }
 /* ------------------------- STOCK SECTION -------------------------*/
 
-#stock {
-  height: 40vw;
-}
-#stock h2 {
-  margin-top: 5%;
-  margin-bottom: 0;
-}
+#stock { height: 40vw; }
+#stock h2 { margin-top: 5%; margin-bottom: 0; }
 #song {
   font-family: Century Gothic, sans-serif;
   font-size: 1.3vw;
@@ -298,7 +254,6 @@ section nav ul li a img{
   margin-top: 2%;
   margin-left: 4%;
   color: black;
-  position: relative;
   z-index: 7;
 }
 #song_player img {
@@ -306,15 +261,10 @@ section nav ul li a img{
   top: 10%;
   left: 7.5%;
 }
-#song_player #album {
-  width: 55%;
-  left: 22.5%;
-}
+#song_player #album { width: 55%; left: 22.5%; }
 #player {
   width: 85%;
-  position: relative;
   z-index: 8;
-  
 }
 #song_text {
   font-family: Century Gothic, sans-serif;
@@ -326,9 +276,7 @@ section nav ul li a img{
   line-height: 140%;
   letter-spacing: 0.1vw;
 }
-#song_text span {
-  margin-right: 25%;
-}
+#song_text span { margin-right: 25%; }
 #song_text strong {
   padding: 0.5%;
   padding-left: 5%;
@@ -336,14 +284,10 @@ section nav ul li a img{
   background-color: #ED97CF;
   border-radius: 0.5vw;
 }
-#stock a {
-  margin-right: 15%;
-}
+#stock a { margin-right: 15%; }
+
 /* ------------------------- INSPIRE SECTION -------------------------*/
-#inspire {
-  height: 40vw;
-  margin-bottom: 10%;
-}
+#inspire { height: 40vw; margin-bottom: 10%; }
 #inspiration  {
   width: 50%;
   margin-top: -2%;
@@ -353,9 +297,7 @@ section nav ul li a img{
   font-family: Century Gothic, sans-serif;
   font-size: 1.3vw;
 }
-#volume4 {
-  margin-top: -4%;
-}
+#volume4 { margin-top: -4%; }
 /* ------------------------- FOOTER -------------------------*/
 footer {
   font-family: Century Gothic, sans-serif;
@@ -372,21 +314,14 @@ footer {
   align-items: center;
   position: relative;
 }
-
-footer p {
-  font-size: 1.3vw;
-  margin: 0.5vw;
-}
+footer p { font-size: 1.3vw; margin: 0.5vw; }
 #logo_footer {
   width: 20%;
   margin-top: -5%;
   background-color: black;
   border-radius: 2vw;
 }
-#logo_footer img {
-  width: 70%;
-  margin-bottom: 5%;
-}
+#logo_footer img { width: 70%; margin-bottom: 5%; }
 #navbottom {
   display: flex;
   justify-content: center;
@@ -401,9 +336,7 @@ footer p {
   margin-left: 5%;
   margin-right: 5%;
 }
-#navbottom a img {
-  width: 110%;
-}
+#navbottom a img { width: 110%; }
 
 /* ------------------------- HOME CLASSES -------------------------*/
 .titles{
@@ -437,37 +370,24 @@ footer p {
 }
 
 /* ---------- HOME ANIMATIONS ---------------*/
-#navtop ul li{
+#navtop ul li, .button, .menu_links li, #d_chord_green, #g_chord_red, #chord, #navbottom a img {
   transition: all 0.5s ease-in-out;
 }
-
 #navtop ul li:hover {
-  transition: 0.5s ease-in-out;
   background-color: rgb(234, 206, 227, 0.5);
   border-radius: 1.5vw;
   transform: translateY(-0.1vw);
-  
-}
-.button {
-  transition: all 0.5s ease-in-out;
 }
 .button:hover {
   position: relative;
-  transition: 0.5s ease-in-out;
   box-shadow: 0 0 1vw white;
   transform: translateY(-0.1vw);
-}
-#menu_links li {
-  transition: all 0.5s ease-in-out;
 }
 #menu_links li:hover {
   position: relative;
   transition: 0.5s ease-in-out;
   box-shadow: 0 0 1.5vw white;
   transform: translateY(-0.2vw);
-}
-#d_chord_green, #g_chord_red, #chord {
-  transition: all 0.5s ease-in-out;
 }
 #d_chord:hover #d_chord_green {
   opacity: 1;
@@ -478,38 +398,17 @@ footer p {
   opacity: 1;
   visibility: visible;
   transition-delay: 0s;
-  
 }
 #chord:hover {
   transition: 0.5s ease-in-out;
   transform: scale(1.1);
 }
-#navbottom a img {
-  transition: all 0.5s ease-in-out;
-}
 #navbottom a img:hover {
-  transition: 0.5s ease-in-out;
   transform: translateY(-0.2vw);
 }
 
   /* -------------------------------------------------- HOME MOBILE --------------------------------------------------*/
   @media screen and (max-width: 740px) {
-    /* html {
-      scroll-behavior: smooth;
-      background-color: black;
-      font-size: 1.2vw;
-      color: white;
-      padding: 0%;
-      } */
-    /*  body {
-      font-family: 'Bauhaus 93', sans-serif;
-      letter-spacing: 0.2vw;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      text-align: center;
-      position: relative;
-      } */
       /*-------------------------HEADER-------------------------*/
     #logo_link {
       width: 100%;
@@ -536,119 +435,57 @@ footer p {
     #navtop ul li a {
       padding-left: 20%;
       padding-right: 20%;
+      z-index: 20;
     }
     
     /* ------------------------- WELCOME SECTION -------------------------*/
-    
     #welcome h1 {
-      /* text-align: center; */
-      /* margin-left: 5%; */
-      /* margin-right: 5%; */
-      /* margin-top: 2vw; */
       font-size: 12vw;
-      /* letter-spacing: 2vw; */
-      /* display: grid; */
       display: flex;
       flex-direction: column;
       align-items: start;
-      /* grid-template-columns: 1fr 1fr; */
-      /* grid-template-rows: auto auto; */
       color: #ED97CF;
       letter-spacing: 3vw;
       position: relative;
       z-index: 5;
       }
-    #black {
-      text-shadow: 0 0 2vw rgb(255, 255, 255)
-      }
-    #white {
-      /* z-index: 3;
-      color: white;
-      grid-column: 1/-1 ; */
-      font-size: 12vw;
-    }
+    #black { text-shadow: 0 0 2vw rgb(255, 255, 255) }
+    #white { font-size: 12vw; }
     #bg_welcome {
-      /* margin-top: -31%;
-      margin-left: -17%;
-      width: 20%; */
       position: absolute;
       z-index: 4;
-      top: 15%;
+      top: 7%;
       left: 80%;
       width: 32%;
     }
-    /* #welcome span img{
-      margin-top: 14vw;
-    } */
-    #welcome {
-      height: 80vw;
-    }
+    #welcome { height: 90vw; }
     #welcome a{
       margin-top: -5%;
       margin-left: -25%;
-      /* position: absolute;
-      z-index: 5; */
     }
     
       /* ------------------------- MENU SECTION -------------------------*/
-    
-    #menu_home {
-      height: 145vw;
-    }
+    #menu_home { height: 145vw; }
     #menu_links {
-      /* padding: 0;
-      display: flex;
-      margin-top: 0;
-      margin-bottom: 7%;
-      list-style-type: none;
-      justify-content: center; */
       flex-direction: column;
       align-items: center;
-
     }
     section nav ul li a img{
-      /* padding-left: 5%;
-      padding-right: 5%; */
       padding-bottom: 8%;
       border-radius: 10%;
     }
     #menu_links li{
-      /* background-color: #ED97CF;
-      border-radius: 10%; */
       width: 45%;
       margin-bottom: 10%;
     }
-    /* .image_link {
-      text-decoration: none;
-      color: white;
-      font-size: 2.5vw;
-    }  */
     .image_link p{
       font-size: 5vw;
       letter-spacing: 1vw;
-      /* margin-top: 0;
-      margin-bottom: -20%; */
     }
-    /* #guitar_playing {
-      margin-left: -6%;
-      width: 105%;
-      margin-top: -9%;
-    }
-    #pages {
-      margin-top: 5%;
-      width: 61%;
-    }
-    #man_walking {
-      margin-top: -10%;
-      margin-left: -14%;
-    } */
       /* ------------------------- LEARN SECTION -------------------------*/
     
-    #learn {
-      height: 120vw;
-    }
+    #learn { height: 120vw; }
     #learn h2 {
-      /* margin-bottom: 1%; */
       z-index: 6;
       position: relative;
     }
@@ -676,48 +513,25 @@ footer p {
     #guitar_zoom {
       margin-top: 15%;
       position: absolute;
-      rotate: -50deg;
+      transform: rotate(-50deg);
       width: 120%;
       margin-left: -62%;
-      /* margin-right: 10%; */
     }
     #d_chord {
-      /* position: relative;
-      align-self: self-start;
-      margin-top: -5%;
-      margin-left: 8%; */
       margin-top: 0;
       margin-left: -2%;
       width: 22.5%;
     }
     #g_chord {
-      /* position: relative;
-      align-self: self-end;
-      margin-right: 8%;
-      margin-top: -3%; */
       margin-top: -20%;
       margin-right: 12%;
       width: 22.5%;
     }
-    /* .chord_hidden {
-      opacity: 0;
-      visibility: hidden;
-      position: absolute;
-      transition: visibility 0s, opacity 0.5s linear;
-      top: 0;
-      left: 0;
-    } */
     .circle {
-      /* z-index: 6; */
       width: 3.5vw;
       height: 3.5vw;
-      /* border-radius: 50%;
-      background-color: white; */
-    
     }
     #chord {
-      /* width: 10%;
-      display: grid; */
       grid-template-rows: repeat(2, 1fr); 
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 15%;
@@ -725,233 +539,107 @@ footer p {
       margin-top: 5%;
       margin-right: 15%;
     }
-    #first_finger {
-      grid-area: 1/1/2/1;
-    }
-    #second_finger {
-      grid-area: 1/3/2/4;
-    }
+    #first_finger { grid-area: 1/1/2/1; }
+    #second_finger { grid-area: 1/3/2/4; }
+    
     #third_finger {
       margin-top: 0%;
       grid-area: 2/1/3/2;
     }
-    /* .choise {
-      z-index: 8;
-    } */
-    .choise img{
-      width: 170%;
-    }
+    .choise img{ width: 170%; }
     #chord_choise p{
       font-size: 5vw;
       position: relative;
       z-index: 6;
-      /* margin-top: 0;
-      margin-bottom: 2%; */
     }
-   /*  #volume2 {
-      width: 25%;
-      margin-top: -4%;
-    }
-    #volume3 {
-      margin-top: 5%;
-    } */
-    #chord_choise p {
-      margin-bottom: 5%;
-    }
+    #chord_choise p { margin-bottom: 5%; }
+
     /* ------------------------- STOCK SECTION -------------------------*/
-    
-    #stock {
-      height: 170vw;
-    }
-    #stock h2 {
-      margin: 0;
-    }
+    #stock { height: 170vw; }
+    #stock h2 { margin: 0; }
     #song {
-      /* font-family: Century Gothic, sans-serif;
-      font-size: 1.3vw;
-      width: 75%;
-      height: 60%;
-      margin-bottom: 2%;
-      margin-left: 12.5%;
-      margin-right: 12.5%; */
       font-size: 2vw;
       width: 100%;
       height: 72.5%;
       margin: 0;
     }
     #song  ul{
-      /* height: 100%;
-      padding: 0;
-      display: flex; */
-      /* justify-content: center;
-      list-style-type: none; */
       flex-direction: column;
       align-items: center;
     }
     #song_player {
       width: 50%;
       height: 90%;
-      /* background-color: #ED97CF; */
-      /* border-radius: 10%; */
-      border: 0.6vw solid white;
-      /* position: relative; */
+      border: 0.6vw solid white
     }
-    /* #song_player h3, h4 {
-      text-align: left;
-      margin: 0;
-      margin-top: 2%;
-      margin-left: 4%;
-      color: black;
-      position: relative;
-      z-index: 7;
-    }
-    #song_player img {
-      position: absolute;
-      top: 10%;
-      left: 7.5%;
-    }
-    #song_player #album {
-      width: 55%;
-      left: 22.5%;
-    } */
-    /* #player {
-      width: 85%;
-      position: relative;
-      z-index: 8;
-      
-    } */
-    #song_text {
-      /* font-family: Century Gothic, sans-serif; */
-      width: 100%;
-      /* 
-      height: 100%; */
-      /* text-align: center; */
-    }
+    #song_text { width: 100%; }
     #song_text p {
-      /* margin-left: 5%; */
-      /* line-height: 140%;
-      letter-spacing: 0.1vw; */
       line-height: 160%;
       font-size: 3vw;
       margin: 0;
       margin-top: 5%;
       margin-bottom: 5%;
     }
-    #song_text span {
-      margin-right: 25%;
-    }
-    #song_text strong {
-      padding: 0.5%;
-      padding-left: 5%;
-      padding-right: 5%;
-      background-color: #ED97CF;
-      border-radius: 0.5vw;
-    }
-    #stock a {
-      margin-right: 15%;
-    }
+    #stock a { margin-right: 27.5%; }
     /* ------------------------- INSPIRE SECTION -------------------------*/
     #inspire {
-      height: 40vw;
-      margin-bottom: 10%;
-    }
-    #inspiration  {
-      width: 50%;
-      margin-top: -2%;
-      margin-left: -15%
-    }
-    #inspire p {
-      font-family: Century Gothic, sans-serif;
-      font-size: 1.3vw;
-    }/* 
-    #volume4 {
-      margin-top: -4%;
-    } */
-    /* ------------------------- FOOTER -------------------------*/
-    footer {
-      font-family: Century Gothic, sans-serif;
-      color: black;
-      font-weight: bold;
-      background-color: #ED97CF;
-      border-top-left-radius: 2.5vw;
-      border-top-right-radius: 2.5vw;
-      margin: auto auto;
-      width: 95%;
-      height: 17vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-    }
-    
-    footer p {
-      font-size: 1.3vw;
-      margin: 0.5vw;
-    }
-    #logo_footer {
-      width: 20%;
-      margin-top: -5%;
-      background-color: black;
-      border-radius: 2vw;
-    }
-    #logo_footer img {
-      width: 70%;
-      margin-bottom: 5%;
-    }
-    #navbottom {
-      display: flex;
-      justify-content: center;
-      background-color: black;
-      align-items: center;
-      width: 50%;
-      height: 35%;
-      border-radius: 2vw;
-    } 
-    #navbottom a {
-      width: 10%;
+      height: 90vw;
       margin-left: 5%;
       margin-right: 5%;
     }
-    #navbottom a img {
-      width: 110%;
+    #inspiration  {
+      width: 75%;
+      margin: 0
     }
+    #inspire p {
+      font-family: Century Gothic, sans-serif;
+      font-size: 2.8vw;
+    }
+    /* ------------------------- FOOTER -------------------------*/
+    footer {
+      width: 85%;
+      height: max-content;
+    }
+    footer p {
+      font-size: 3vw;
+      margin: 2vw;
+    }
+    #logo_footer {
+      width: 50%;
+      margin-top: -20%;
+      border-radius: 3vw;
+    }
+    #navbottom {
+      flex-direction: column;
+      width: 50%;
+      height: max-content;
+      border-radius: 3vw;
+    } 
+    #navbottom a {
+      width: 75%;
+      margin: 0;
+    }
+    #navbottom a img { width: 70%; }
     
     /* ------------------------- HOME CLASSES -------------------------*/
     .titles{
-      /* text-align: right; */
       font-size: 7.5vw;
-      /* letter-spacing: 1.5vw;
-      margin-right: 10%; */
       text-align: center;
       margin: 0;
     }
     .button{
-      /* padding: 0.8vw; */
-      /* padding-top: 0; */
       font-size: 7vw;
-      /* color: black; */
-      /* text-decoration: none;
-      background-color: white; */
       border: 1vw solid #ED97CF;
       border-radius: 2vw;
-      /* margin-top: 1vw;
-      text-align: right;
-      float: right; */
     }
-    
     .decorative_icon{
       margin-bottom: -7vw;
       margin-left: -4vw;
       width: 12vw;
     }
-    .bg_volume {
-      display: none;
-    /* img{
-      float: left;
-      width: 18%; */
-    }
-      /* ---------- HOME ANIMATIONS ---------------*/
+    .bg_volume { display: none; }
 
+     /* ---------- HOME ANIMATIONS ---------------*/
     .button:hover {
       box-shadow: 0 0 2vw white;
       transform: translateY(-0.5vw);
@@ -966,16 +654,8 @@ footer p {
       box-shadow: 0 0 4vw white;
       transform: translateY(-0.6vw);
     }
-    #d_chord_green, #g_chord_red, #chord {
-      transition: all 0.5s ease-in-out;
-    }
-    #chord:hover {
-      transition: 0.5s ease-in-out;
-      transform: scale(1.2);
-    }
+    #chord:hover { transform: scale(1.2); }
     #navbottom a img:hover {
-      transition: 0.5s ease-in-out;
-      transform: translateY(-0.2vw);
+      transform: translateY(-0.6vw);
     }
-    
   }

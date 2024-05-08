@@ -23,12 +23,12 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="chords_songs_main">
         <section id="banner">
-            <div> <!-- faire bg -->
-                <h2>chords library</h2>
-                <h2>visualisation</h2>
-                <h2>sound</h2>
+            <div>
+                <h2 id="row1">chords library</h2>
+                <h2 id="row2">visualisation</h2>
+                <h2 id="row3">sound</h2>
             </div>
         </section>
         <section id="chords_library">
@@ -42,6 +42,7 @@
                         <li class="chords_images"><img src="/images/chords/C_big.webp" alt=""></li>
                         <li>
                             <h3>Cm</h3>
+                            <p>3 Fr</p>
                             <img src="/images/chords/Cm.webp" alt="">
                         </li>
                         <li>
@@ -60,11 +61,11 @@
                             <h3>C6</h3>
                             <img src="/images/chords/C6.webp" alt="">
                         </li>
-                        <audio controls>
-                            <source src="/audios/c.mp3" type="audio/mp3">
-                            Your browser does not support the audio element.
-                        </audio>
                     </ul>
+                    <audio controls>
+                        <source src="/audios/c.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
                 </li>
                 <li class="chord">
                     <ul id="D_chord">
@@ -93,11 +94,11 @@
                             <h3>D7</h3>
                             <img src="/images/chords/D7.webp" alt="">
                         </li>
-                        <audio controls>
-                            <source src="/audios/d.mp3" type="audio/mp3">
-                            Your browser does not support the audio element.
-                        </audio>
                     </ul>
+                    <audio controls>
+                        <source src="/audios/d.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
                 </li>
                 <li class="chord">
                     <ul id="E_chord">
@@ -126,11 +127,11 @@
                             <h3>Esus</h3>
                             <img src="/images/chords/Esus.webp" alt="">
                         </li>
-                        <audio controls>
-                            <source src="/audios/e.mp3" type="audio/mp3">
-                            Your browser does not support the audio element.
-                        </audio>
                     </ul>
+                    <audio controls>
+                        <source src="/audios/e.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
                 </li>
                 <li class="chord">
                     <ul id="F_chord">
@@ -159,22 +160,23 @@
                             <h3>F#7</h3>
                             <img src="/images/chords/F_sharp_7.webp" alt="">
                         </li>
-                        <audio controls>
-                            <source src="/audios/f.mp3" type="audio/mp3">
-                            Your browser does not support the audio element.
-                        </audio>
                     </ul>
+                    <audio controls>
+                        <source src="/audios/f.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
                 </li>
                 <li class="chord">
                     <ul id="G_chord">
                         <li>
                             <h3>G</h3>
                             <img src="/images/chords/G.webp" alt="">
+                        </li>
+                        <li class="chords_images"><img src="/images/chords/G_big.webp" alt=""></li>
                         <li>
                             <h3>G6</h3>
                             <img src="/images/chords/G6.webp" alt="">
                         </li>
-                        <li class="chords_images"><img src="/images/chords/G_big.webp" alt=""></li>
                         <li>
                             <h3>G7</h3>
                             <img src="/images/chords/G7.webp" alt="">
@@ -185,17 +187,17 @@
                         </li>
                         <li>
                             <h3>Gm6</h3>
-                            <img src="/images/chords/Gm6.webp" alt="">
+                            <img src="/images/chords/Gm6.webp" alt="" id="Gm6">
                         </li>
                         <li>
                             <h3>Gsus</h3>
                             <img src="/images/chords/Gsus.webp" alt="">
                         </li>
-                        <audio controls>
-                            <source src="/audios/g.mp3" type="audio/mp3">
-                            Your browser does not support the audio element.
-                        </audio>
                     </ul>
+                    <audio controls>
+                        <source src="/audios/g.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
                 </li>
                 <li class="chord">
                     <ul id="A_chord">
@@ -224,26 +226,26 @@
                             <h3>A6</h3>
                             <img src="/images/chords/A6.webp" alt="">
                         </li>
-                        <audio controls>
-                            <source src="/audios/a.mp3" type="audio/mp3">
-                            Your browser does not support the audio element.
-                        </audio>
                     </ul>
+                    <audio controls>
+                        <source src="/audios/a.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
                 </li>
                 <li class="chord">
                     <ul id="B_chord">
                         <li>
                             <h3>B</h3>
-                            <img src="/images/chords/B.webp" alt="">
+                            <img src="/images/chords/B.webp" alt="" id="B">
                         </li>
                         <li class="chords_images"><img src="/images/chords/B_big.webp" alt=""></li>
                         <li>
                             <h3>Bm</h3>
-                            <img src="/images/chords/Bm.webp" alt="">
+                            <img src="/images/chords/Bm.webp" alt="" id="Bm">
                         </li>
                         <li>
                             <h3>Bb</h3>
-                            <img src="/images/chords/Bb.webp" alt="">
+                            <img src="/images/chords/Bb.webp" alt="" id="Bb">
                         </li>
                         <li>
                             <h3>Bdim</h3>
@@ -255,13 +257,13 @@
                         </li>
                         <li>
                             <h3>Bbm6</h3>
-                            <img src="/images/chords/Bbm6.webp" alt="">
+                            <img src="/images/chords/Bbm6.webp" alt="" id="Bbm6">
                         </li>
-                        <audio controls>
-                            <source src="/audios/b.mp3" type="audio/mp3">
-                            Your browser does not support the audio element.
-                        </audio>
                     </ul>
+                    <audio controls>
+                        <source src="/audios/b.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
                 </li>
             </ul>
         </section>

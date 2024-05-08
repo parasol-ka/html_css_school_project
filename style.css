@@ -19,7 +19,7 @@ body {
   text-align: center;
   position: relative;
   }
-  
+  /*----------------------------------HOME PAGE----------------------------------*/
   /*-------------------------HEADER-------------------------*/
 #logo_link {
   position: absolute;
@@ -659,3 +659,11 @@ footer p { font-size: 1.3vw; margin: 0.5vw; }
       transform: translateY(-0.6vw);
     }
   }
+
+  /*----------------------------------CHORDS PAGE----------------------------------*/
+  /*-------------------------HEADER-------------------------*/
+#navtop #nav_links_other_pages { padding-bottom: 5%; }
+audio {
+  width: 30%; /* Ajuster la largeur du lecteur */
+  height: 50px; /* Ajuster la hauteur du lecteur */
+}

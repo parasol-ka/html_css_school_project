@@ -747,7 +747,7 @@ footer p { font-size: 1.3vw; margin: 0.5vw; }
   flex-direction: column;
   justify-content: flex-start;
 }
-#Gm6, #B, #Bm, #Bb, #Bbm6 {
+#Gm6, #B, #Bm, #Bb, #Bbm6, #F {
   margin-top: 11%;
 }
 audio {
@@ -757,7 +757,9 @@ audio {
 }
 
 /* ---------------------- CHORDS LIBRARY MOBILE ----------------------*/
+
 @media screen and (max-width: 1024px) {
+  #navtop #nav_links_other_pages { padding-bottom: 0; }
   #banner {
     margin: 20% 0;
     width: 100%;
@@ -793,6 +795,7 @@ audio {
     order: -1;
   }
   #chords_groups li ul .chords_images img {
+    width: 70%;
     margin-top: -30%;
     margin-bottom: -15%;
   }
@@ -809,3 +812,25 @@ audio {
     margin-bottom: 15%;
   }
 }
+#chords_songs_main #songs_library {
+  height: max-content;
+  transition: all 0.5s ease-in-out;
+}
+
+.song_content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  background-color: #ED97CF; /* couleur de fond du contenu */
+  padding: 0 1em; /* espacement à l'intérieur du contenu */
+}
+
+input[type="checkbox"] {
+  display: none; /* cache la case à cocher */
+}
+
+input[type="checkbox"]:checked + label + .song_content {
+  max-height: max-content; /* Set a large max-height to accommodate content */
+}
+
+  /*----------------------------------SONGS PAGE----------------------------------*/

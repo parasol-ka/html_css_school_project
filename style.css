@@ -989,3 +989,90 @@ input[type="checkbox"]:checked + label + .song_content { max-height: 200vw; }
   }
 }
 
+/*----------------------------------INFO PAGE----------------------------------*/
+
+#information :not(h2){ font-family: Century Gothic, sans-serif; }
+#information h2 {
+  font-size: 3vw;
+  letter-spacing: 1vw;
+}
+#description {
+  font-family: Century Gothic, sans-serif;
+  display: flex;
+}
+#description img{
+  width: 25%;
+  height: 25%;
+  margin-right: 5%;
+}
+#description p { line-height: 170%; }
+#layouts {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  padding-left: 0;
+  flex-wrap: wrap;
+  height: max-content;
+}
+#layouts li {
+  text-align: center;
+  width: 20%;
+}
+#layouts li img{
+  width: 100%;
+  margin: 2%;
+  padding: 2%;
+  background-color: #ED97CF;
+  border-radius: 2vw;
+}
+#information h2 {
+  font-size: 5vw;
+  letter-spacing: 3vw;
+  margin-bottom: 0;
+}
+#ps {
+  font-size: 1.5vw;
+  letter-spacing: 1vw;
+  margin-bottom: 10%;
+}
+/*----------------------------------INFO MOBILE----------------------------------*/
+@media screen and (max-width: 824px) {
+  
+  #information h2 {
+    font-size: 8vw;
+  }
+  #description {
+    flex-direction: column;
+    align-items: center;
+  }
+  #description img {
+    width: 50%;
+    margin-right: 0;
+  }
+  #description p {
+    font-size: 4vw;
+    line-height: 200%;
+  }
+  #layouts {
+    flex-direction: column;
+    align-items: center;
+  }
+  #layouts h3 {
+    font-size: 5vw;
+  }
+  #layouts li {
+    width: 70%;
+    margin-bottom: 10%;
+  }
+  #layouts li img {
+    width: 100%;
+    margin: 0;
+    border-radius: 4vw;
+  }
+  #ps {
+    font-size: 5vw;
+    margin-bottom: 30%;
+  }
+}
+

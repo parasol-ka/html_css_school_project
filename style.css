@@ -258,7 +258,7 @@ section nav ul li a img{
 }
 #song_player img {
   position: absolute;
-  top: 10%;
+  top: 13%;
   left: 7.5%;
 }
 #song_player #album { width: 55%; left: 22.5%; }
@@ -409,7 +409,7 @@ footer p { font-size: 1.3vw; margin: 0.5vw; }
 }
 
   /* -------------------------------------------------- HOME MOBILE --------------------------------------------------*/
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 824px) {
       /*-------------------------HEADER-------------------------*/
     #logo_link {
       width: 100%;
@@ -694,12 +694,8 @@ footer p { font-size: 1.3vw; margin: 0.5vw; }
   align-self: flex-start;
   margin-bottom: 1%;
 }
-#banner div #row2 {
-  align-self: flex-end;
-}
-#banner div #row3 {
-  margin-left: -20%;
-}
+#banner div #row2 { align-self: flex-end; }
+#banner div #row3 { margin-left: -20%; }
 #banner h2 {
   font-size: 3vw;
   letter-spacing: 1vw;
@@ -714,7 +710,7 @@ footer p { font-size: 1.3vw; margin: 0.5vw; }
   list-style-type: none;
 }
 #chords_groups { padding: 0; }
-.chord ul{
+.chord ul, #song_chords ul {
   margin-top: 5%;
   list-style-type: none;
   display: flex;
@@ -724,7 +720,7 @@ footer p { font-size: 1.3vw; margin: 0.5vw; }
   padding-top: 0;
   border-radius: 2.5vw;
 }
-.chord ul li h3 {
+.chord ul li h3, #song_chords ul li h3 {
   font-family: Century Gothic, sans-serif;
   background-color: black;
   font-size: 1.5vw;
@@ -739,17 +735,13 @@ footer p { font-size: 1.3vw; margin: 0.5vw; }
   width: 100%;
   margin-bottom: -55%;
 }
-.chord ul li {
-  margin: 1%;
-}
+.chord ul li { margin: 1%; }
 .chord {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-#Gm6, #B, #Bm, #Bb, #Bbm6, #F {
-  margin-top: 11%;
-}
+#Gm6, #B, #Bm, #Bb, #Bbm6, #F, #E7 { margin-top: 11%; }
 audio {
   margin-top: 5%;
   width: 25vw; 
@@ -758,7 +750,7 @@ audio {
 
 /* ---------------------- CHORDS LIBRARY MOBILE ----------------------*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 824px) {
   #navtop #nav_links_other_pages { padding-bottom: 0; }
   #banner {
     margin: 20% 0;
@@ -779,7 +771,7 @@ audio {
     margin-bottom: 1.5%;
     padding: 0;
   }
-  .chord ul {
+  .chord ul, .song_content #song_chords ul{
     flex-wrap: wrap;
     border-radius: 4vw;
     padding: 0;
@@ -799,10 +791,8 @@ audio {
     margin-top: -30%;
     margin-bottom: -15%;
   }
-  .chord ul li h3 {
-    font-size: 300%;
-  }
-  .chord ul li p {
+  .chord ul li h3, #song_chords ul li h3 { font-size: 300%; }
+  .chord ul li p{ 
     font-size: 3.5vw;
     height: 10%;
   }
@@ -812,25 +802,190 @@ audio {
     margin-bottom: 15%;
   }
 }
-#chords_songs_main #songs_library {
-  height: max-content;
-  transition: all 0.5s ease-in-out;
-}
 
+  /*----------------------------------SONGS PAGE----------------------------------*/
+#chords_songs_main #songs_library { transition: all 1s ease-in-out; }
 .song_content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
-  background-color: #ED97CF; /* couleur de fond du contenu */
-  padding: 0 1em; /* espacement à l'intérieur du contenu */
+  transition: max-height 1s ease-in-out;
+  padding: 0 1em;
+
+  display: grid;
+  padding: 0;
+  grid-template-columns: 22vw 3fr;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 1%;
+  column-gap: 3%;
+}
+input[type="checkbox"] { display: none; }
+input[type="checkbox"]:checked + label + .song_content { max-height: 200vw; }
+#songs_library {
+  margin-top: 5%;
+  font-family: Century Gothic, sans-serif;
+}
+.song_title {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  column-gap: 1%;
+  width: 100%;
+  height: 3vw;
+  background-color: #ED97CF;
+  color: black;
+  border: white 0.3vw solid;
+  border-radius: 1vw;
+  text-align: left;
+}
+.song_title strong { padding-left: 6%; }
+#play_icon{
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 1%;
+}
+#triangle {
+  width: 80%;
+  height: 90%;
+  top: 5%;
+  left: 20%;
+  background-color: #ED97CF;
+  clip-path: polygon(15% 20%, 15% 80%, 80% 50%);
+  position: absolute;
+}
+#song_player h3, #song_player h4 {
+  position: relative;
+  z-index: 7;
+}
+.song_content li {
+  list-style-type: none;
+  background-color: #ED97CF;
+  border-radius: 2vw;
+}
+#song_chords ul li img {
+  width: 100%;
+  height: 8vw;
+}
+#song_chords ul li #E7, #song_chords ul li #F { height: 7.2vw; }
+.song_content #song_player {
+  width: 100%;
+  height: 100%;
+  grid-area: 1/1/4/1;
+}
+.song_content #song_chords { grid-column: 2/4; }
+#verse_rythm {
+  padding-left: 3%;
+  grid-area: 2/2/3/4;
+}
+#chorus_rythm { padding-left: 3%; }
+#verse_rythm, #chorus_rythm{
+  display: flex;
+  align-items: center;
+}
+#verse_rythm h3, #chorus_rythm h3 {
+  margin: 0;
+  font-family: 'Bauhaus 93', sans-serif;
+  color: black;
+  display: inline;
+}
+#verse_rythm img {
+  width: 80%;
+  margin-bottom: -2%;
+  margin-left: 5%;
+}
+#chorus_rythm img {
+  margin-left: 5%;
+  width: 50%;
+  margin-bottom: -2%;
+}
+#chorus_rythm { grid-area: 3/2/4/4; }
+#song_lyrics {
+  background-color: black;
+  grid-area: 4/1/5/4;
+}
+#song_chords ul {
+  margin-top: 0;
+  column-gap: 1%;
+}
+#song_lyrics p {
+  margin-bottom: 10%;
+  line-height: 140%;
+}
+#song_lyrics p strong {
+  padding: 1%;
+  line-height: 300%;
+  color: black;
+  background-color: #ED97CF;
+  border-radius: 1vw;
+}
+.chord_gap {margin-right: 20%; }
+#mad_world #verse_rythm{ grid-row: 2/4; }
+#mad_world #song_player h4{ font-size: 0.8vw; }
+#mad_world #song_player { height: 125%; }
+#mad_world #song_player #album { top: 20%; }
+#verse_rythm #mw_rythm{
+  width: 30%;
+  margin-bottom: -2%;
+}
+#coming_soon {
+  width: 100%;
+  margin-bottom: 10%;
+}
+/*----------------------------------SONGS MOBILE----------------------------------*/
+@media screen and (max-width: 824px) {
+  .song_title{
+    height: 10vw;
+    font-size: 3vw;
+    border: white 0.5vw solid;
+    border-radius: 3vw;
+  }
+  .song_content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 75vw repeat(4, auto);
+  }
+  .song_content #song_player {
+    width: 95%;
+    height: 100%;
+    margin:auto auto;
+    grid-area: 1/1/2/1;
+  }
+  .song_content #song_chords { grid-area: 2/1/3/1; }
+  #verse_rythm {
+    padding-left: 3%;
+    grid-area: 3/1/4/1;
+  }
+  #chorus_rythm { grid-area: 4/1/5/1; }
+  #song_lyrics {
+    background-color: black;
+    grid-area: 5/1/6/1;
+  }
+  #song_lyrics p {margin-bottom: 50%;}
+  #song_player h3, #song_player h4 {
+    font-size: 4vw;
+  }
+  #mad_world #song_player h4{ font-size: 3vw; }
+  #verse_rythm, #chorus_rythm{
+    flex-direction: column; 
+    font-size: 3vw;
+    padding: 0;
+  }
+  #verse_rythm img {width: 95%; margin: 0; margin-bottom: -2%;}
+  #chorus_rythm img {width: 70%; margin: 0; margin-bottom: -2%;}
+  #song_chords ul li img, #song_chords ul li #E7, #song_chords ul li #F {
+    width: 70%;
+    height: auto;
+  }
+  #song_lyrics p {
+    font-size: 3vw;
+  }
+  #mad_world #song_player { height: 100%; }
+  #mad_world #verse_rythm{ grid-row: 3/5; }
+  input[type="checkbox"]:checked + label + .song_content { max-height: max-content; }
+  #coming_soon {
+    margin-top: 10%;
+    margin-bottom: 30%;
+  }
 }
 
-input[type="checkbox"] {
-  display: none; /* cache la case à cocher */
-}
-
-input[type="checkbox"]:checked + label + .song_content {
-  max-height: max-content; /* Set a large max-height to accommodate content */
-}
-
-  /*----------------------------------SONGS PAGE----------------------------------*/

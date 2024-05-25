@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Bauhaus 93';
-  src: url('Bauhaus93.ttf') format('truetype');
-  font-family: 'Zone Em';
-  src: url('ZoneEm.ttf') format('truetype');
+  src: url('BAUHS93.TTF') format('truetype');
+  font-family: 'Bradley Hand ITC';
+  src: url('BRADHITC.TTF') format('truetype');
   }
 html {
   scroll-behavior: smooth;
